@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="시간표"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/menuTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/mainTextView"
+        app:layout_constraintStart_toStartOf="@+id/mainTextView"
+        app:layout_constraintEnd_toEndOf="@+id/mainTextView"
+        android:textSize="30sp"
+
+        />
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/menuTextView"
+        app:layout_constraintStart_toStartOf="@+id/menuTextView"
+        app:layout_constraintEnd_toEndOf="@+id/menuTextView"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

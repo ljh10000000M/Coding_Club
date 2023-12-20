@@ -1,9 +1,7 @@
 package com.example.codingclub
 
-import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private fun lunch() {
         val lunchButton = findViewById<Button>(R.id.lunch)
         lunchButton.setOnClickListener {
-
+            showLunchDialog()
         }
         // TODO 버튼이 눌리면 dialog 표시 (구글에 kotlin custom dialog 검색)
     }
@@ -36,13 +34,15 @@ class MainActivity : AppCompatActivity() {
         // timeButton.setOnClickListener = 버튼 눌림 감지
         timeButton.setOnClickListener {
             // dialog 코드 넣기
+            showTimeDialog()
         }
         // TODO 버튼이 눌리면 dialog 표시 (구글에 kotlin custom dialog 검색)
     }
 
-    private fun showDialog() {
-
-
-
+    private fun showLunchDialog() {
+        CustomLunchDialog(this)
+    }
+    private fun showTimeDialog() {
+        CustomTimeDialog(this)
     }
 }

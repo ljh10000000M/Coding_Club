@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">coding club</string>
+    <string name="lunchText">오늘 급식</string>
+    <string name="menuText">메뉴 1\n메뉴 2\n메뉴 3\n 메뉴 4\n 메뉴 5</string>
+    <string name="timeTextView">1 교시 : \n2 교시 : \n3교시 : \n4교시</string>
 </resources>
